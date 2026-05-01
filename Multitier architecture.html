@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multitier architecture</title>
+</head>
+<body>
+    <h1>Definition</h1>
+    <p>Multitier architecture is a client-server software model that separates applications into distinct, physically separated layers—typically presentation, logic, and data—running on separate servers. This structure enhances scalability, security, and maintainability by allowing independent development, deployment, and scaling of each tier.</p>
+    <h2>Roles from the 3 layers</h2>
+    <h4>Presentation Tier </h4>
+    <p>This is the topmost level where users interact with the application. Its primary role is to collect user input and display processed data.</p>
+    <h4>Application Tier</h4>
+    <p>Often called the "heart" of the application, this tier processes the business logic, executes workflows, and makes logical decisions. It serves as a bridge between the presentation and data tiers.</p>
+    <h4>Data Tier</h4>
+    <p> Responsible for storing, managing, and retrieving the application's information.</p>
+    <h3>Benefits/Features</h3>
+    <ul>
+        <li>Scalability - each tier can be scaled independently.</li>
+        <li>Maintainability - changes in one tier (like updating the user interface) often have minimal impact on the other tiers.</li>
+        <li>Security-by isolating the data tier from the front end, you reduce the risk of direct attacks on the database</li>
+        <li>Independent Development - different teams can work on different tiers simultaneously as long as the interfaces (APIs) between them are well-defined</li>
+    </ul>
+    <p><img src="images/Multi.jpg" alt="Multi"></p>
+</body>
+</html>
